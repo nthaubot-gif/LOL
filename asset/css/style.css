@@ -1,0 +1,1765 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif; /* Đặt font chung cho body */
+    overflow-x: hidden; /* Ẩn thanh cuộn ngang thừa */
+    background-color: #1a1a1a;
+}
+
+img {
+    max-width: 100%; /* Đảm bảo ảnh không bao giờ to hơn khung chứa */
+    height: auto;
+    display: block;
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+html{
+    width: 100%;
+}
+
+/* headerseach-test */
+/* #headerseach .headerseach-test{
+    background-color: aqua;
+    height: 80px;
+    width: 100%;
+} */
+/* header */
+@font-face {
+    font-family: 'Beaufort';
+    /* Đường dẫn đến file font BOLD/HEAVY ITALIC của bạn */
+    src: url('./fonts/BeaufortforLOL-BoldItalic.woff') format('woff');
+    font-weight: 800; /* Thiết lập trọng lượng 800 (Heavy) */
+    font-style: italic; /* Quan trọng: Thiết lập kiểu chữ nghiêng */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Beaufort';
+    /* Đường dẫn đến file font REGULAR của bạn */
+    src: url('./fonts/BeaufortforLOL-Regular.woff') format('woff');
+    font-weight: 400; /* Thiết lập trọng lượng 400 (Regular) */
+    font-style: normal; /* Kiểu chữ bình thường */
+    font-display: swap;
+}
+
+body {
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 30px;
+    height: 80px;
+    box-sizing: border-box;
+    position: static;
+    background-color: rgb(0, 0, 0);
+}
+
+/*Begin Header Left */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+.header-left:hover .icon-logo svg,
+.header-left:hover .logo-riot svg {
+    cursor: pointer;
+    fill: red;
+}
+
+.logo-riot svg {
+    width: 75px;
+    height: 24px;
+    fill: #f9f9f9;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-margin-top: 80px;
+    text-align: left;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Neue Frutiger World", Tahoma, sans-serif;
+    tab-size: 4;
+    text-rendering: optimizeSpeed;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+}
+
+.header-container .icon-logo svg {
+    box-sizing: border-box;
+    color: rgb(85, 26, 139);
+    display : block;
+    font-family: "Neue Frutiger World", Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    height: 5px;
+    margin: 0;
+    padding: 0;
+    scroll-margin-top: 80px;
+    tab-size: 4;
+    text-align: left;
+    text-rendering: optimizeSpeed;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    width: 20px;
+    fill: #7e7e7e;
+
+}
+/*End Header Left */
+
+
+/*Begin Header Center */
+.header-center {
+    align-items:center;
+    box-sizing:border-box;
+    color: rgb(10, 20, 40);
+    display:flex;
+    flex-basis:0%;
+    flex-grow:1;
+    flex-shrink:1;
+    font-family:"Neue Frutiger World", Tahoma, sans-serif;
+    font-size:14px;
+    font-weight:700;
+    height:78.4px;
+    justify-content:flex-start;
+    line-height:normal;
+    margin: 0 !important;
+    padding:0;
+    scroll-margin-top:80px;
+    tab-size:4;
+    text-align:left;
+    text-rendering:optimizespeed;
+    text-size-adjust:100%;
+    unicode-bidi:isolate;
+    width:809.938px;
+}
+
+.logo-center-desktop {
+    height: 80px;
+    margin-left: 22px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo-center-desktop svg {
+    box-sizing: border-box;
+    color: rgb(85, 26, 139);
+    display: block;
+    font-family:"Neue Frutiger World", Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    height: 26px;
+    margin: 0;
+    min-width:38px;
+    padding: 0;
+    scroll-margin-top: 80px;
+    tab-size: 4;
+    text-align: left;
+    text-decoration-color: rgb(0, 0, 238);
+    text-decoration-line: none;
+    text-size-adjust: 100%;
+    width:38px;
+    text-rendering: optimizeSpeed;
+    text-decoration: line;
+    text-decoration-thickness: auto;
+    text-decoration-skip-ink: auto;
+    position: relative;
+}
+.header-center-ct {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+.header-center-ct a {
+    color: white;
+    position: relative;
+    text-decoration: none;
+    margin: 7px 0;
+    z-index: 1;
+}
+.header-center-ct a p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+    color:#f9f9f9;
+    font-size:13px;
+    font-family: "Neue Frutiger World", Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+.header-center-ct a:hover p {
+    background-color: rgba(128, 128, 128,.3);
+    border-radius: 6.4px;
+}
+
+.desktop-link-item-underline {
+    display: none;
+}
+
+
+.header-center-ct a:hover .desktop-link-item-underline {
+    display: block;
+    background-color: rgb(0, 160, 186);
+    position: absolute;
+    bottom: 7px;
+    top: 45px;
+    height: 4px;
+    width: 100% !important;
+    border-radius: 2px;
+}
+
+
+.desktop-link-item-icon-linkout {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+
+/* ===== RIOT NEWS DROPDOWN ===== */
+
+.dropdown-toggle {
+    position: relative;
+}
+
+/* underline phải có position */
+.desktop-link-item-underline {
+    position: relative;
+}
+
+
+
+
+/* PANEL */
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    width: 230px;
+    padding: 10px 8px;
+    background: #2b2b2b;              /* xám đậm như ảnh */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.55);
+    display: none;
+    z-index: 999;
+}
+
+.dropdown-toggle:hover .dropdown-menu {
+    display: block;
+}
+
+/* ITEM */
+.dropdown-menu a {
+    display: flex;
+    align-items: center;
+    height: 34px;
+    margin-bottom: 4px;
+    padding: 0 14px;
+    border-radius: 6px;
+    color: #d0d0d0;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+/* ITEM ACTIVE (TẤT CẢ) */
+.dropdown-menu a:first-child {
+    background: #3a3a3a;
+    color: #ffffff;
+}
+
+/* HOVER */
+.dropdown-menu a:hover {
+    background: #3a3a3a;
+    color: #ffffff;
+}
+
+/* bỏ khoảng trống item cuối */
+.dropdown-menu a:last-child {
+    margin-bottom: 0;
+}
+
+
+/*End Header Center */
+
+/*Begin Header Right */
+.header-right {
+    display: flex;
+    align-items: center;
+}   
+
+.header-right .search-icon {
+    /* ensure a perfectly round button */
+    display:inline-grid;
+    place-items:center; 
+    height:44px;
+    width: 45px;
+    border-radius: 16px;
+    background:#1f1f1f; 
+    margin-right:10px;
+    box-sizing:border-box;
+    overflow:hidden;
+    line-height:0; 
+    cursor:pointer;
+}
+
+.header-right .search-icon svg {
+    width:18px;
+    height:18px;
+    fill:#ffffff; /* white magnifier */
+    display:block; /* avoid inline whitespace */
+}
+.header-right .header-lg {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    color: rgb(10, 20, 40);
+    color-scheme: light only;
+    font-family: "FF Mark W05", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    height: 78.4px;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    scroll-margin-top: 80px;
+    tab-size: 4;
+    text-align: left;
+    text-rendering: optimizeSpeed;
+    text-size-adjust: 100%;
+    top: 0px;
+    unicode-bidi: isolate;
+    width: 32px;
+}
+.login-btn {
+    align-items: center;
+    box-sizing: border-box;
+    color: rgb(10, 20, 40);
+    color-scheme: light only;
+    display: flex;
+    font-family: "Neue Frutiger World", Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    height: 78.4px;
+    justify-content: center;
+    line-height: normal;
+    
+    /* Gộp các thuộc tính margin (top, right, bottom, left) đều là 0px */
+    margin: 0px; 
+    
+    /* Gộp các thuộc tính padding (top, right, bottom, left) đều là 0px */
+    padding: 0px; 
+    
+    scroll-margin-top: 80px;
+    tab-size: 4;
+    text-align: left;
+    text-rendering: optimizeSpeed;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    width: 124.463px;
+}
+.login-btn a {
+    /* Background Properties */
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgb(11, 196, 226);
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+
+    /* Border & Box Model */
+    /* Gộp 4 thuộc tính border-radius (đều là 12px) */
+    border-radius: 12px;
+    box-sizing: border-box;
+    height: 32px;
+    width: 112.463px;
+    display: inline-block;
+
+    /* Gộp 4 thuộc tính margin (đều là 0px) */
+    margin: 0px;
+
+    /* Gộp padding: top/bottom = 8px, left/right = 16px */
+    padding: 8px 16px;
+
+    /* Typography (Chữ) */
+    color: rgb(17, 17, 17);
+    font-family: "Neue Frutiger World", Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.04px;
+    line-height: 16px;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+
+    /* Gộp các thuộc tính text-decoration */
+    text-decoration: none;
+    /* (Bao gồm: text-decoration-line: none, 
+                 text-decoration-color: rgb(17, 17, 17),
+                 text-decoration-style: solid,
+                 text-decoration-thickness: auto) */
+
+    /* Transition (Hiệu ứng) */
+    /* Gộp 4 thuộc tính transition */
+    transition: color 1s cubic-bezier(0.06, 0.81, 0, 0.98) 0s;
+    /* (Bao gồm: transition-property: color,
+                 transition-duration: 1s,
+                 transition-timing-function: ...,
+                 transition-delay: 0s) */
+    
+    transition-behavior: normal;
+
+    /* Other Properties */
+    color-scheme: light only;
+    cursor: pointer;
+    position: relative;
+    scroll-margin-top: 80px;
+    tab-size: 4;
+    text-rendering: optimizeSpeed;
+    text-size-adjust: 100%;
+    vertical-align: middle;
+    z-index: 0;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+/*End Header Right */
+/* end header */
+
+
+#howtoplay{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    
+}
+
+/* background-header */
+.background-header img{
+    width: 1920px;
+    height: 100%;
+    /* display: flex; */
+}
+.background-header{
+    position: relative;
+    /* padding-top: 96px; */
+    height: 522px; 
+    overflow: hidden; 
+}
+
+/* header */
+.update-container{
+    width: 1920px;
+    padding: 0 48px;
+    margin: 0 10%;
+    display: flex;
+    /* position: absolute; */
+    /* justify-content: center; */
+    
+    
+}
+.update-header{
+    position: absolute;
+    top: 0;
+    padding-top: 250px;
+    width: 616px;
+    /* padding: 0 48px; */
+    display: flex;
+    flex-direction: column;
+    
+}
+/* Supertitle */
+
+.update-container .update-header .update-supertitle{
+    font-family: Inter, sans-serif;
+    word-break: break-word;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+/* Title */
+.update-header .update-title {
+    text-wrap: balance;
+    word-break: break-word;
+    font-family: "Beaufort for LOL", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 72px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 16px;
+}
+/* Description */
+.update-header .update-description {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    word-break: break-word;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgb(255, 255, 255);
+}
+/* CTA Button */
+.update-header .cta-text {
+color: #0A1428;
+}
+.update-header .btn-primary{
+    padding: 24px 34px;
+    background-color: #C8AA6E;
+    line-height: 10;
+    text-decoration: none;
+}
+.update-header .btn-primary:hover{
+    background-color: #d3bb8b;
+}
+
+#howtoplay-section .section-content{
+    background-color: white;
+    width: 100%;
+    min-height: 544px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-header .section-supertitle,
+.section-header .section-title,
+.section-header .section-body {
+    width: 784px; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #0a1428;
+}
+
+.section-supertitle {
+    font-family: Inter, sans-serif;
+    word-break: break-word;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #0a1428;
+    margin-bottom: 20px;
+}
+.section-header > .section-title > h2{
+    text-wrap: balance;
+    word-break: break-word;
+    font-family: Inter, sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 63px;
+    line-height: 72px;
+    margin-bottom: 30px;
+}
+.section-header > .section-body > p{
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    word-break: break-word;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgb(10, 20, 40);
+}
+
+
+/* 1. Định nghĩa khung chứa có chiều cao cố định 640px */
+.background-body-img {
+    width: 100%;      /* Chiều rộng full màn hình */
+    height: 640px;    /* Chiều cao cố định như bạn muốn */
+    overflow: hidden; /* Ẩn những phần ảnh bị thừa ra ngoài khung */
+}
+ 
+.background-body .background-body-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    inset: 0px;
+    
+    /* border: 1px solid rgb(0, 0, 0);  */
+    z-index: 2;
+}
+
+.videobackground {
+    position: relative;
+    z-index: 2; /* cho video nổi trên */
+    top: -30px; /* kéo cả block video lên */
+
+    width: 100%;
+    height: 640px; /* tùy chỉnh */
+    overflow: hidden;
+}
+.videobackground video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* video phủ kín */
+}
+.video-overlay{
+    position: absolute;
+    top: 50%;  /* căn giữa dọc */
+    left: 50%; /* căn giữa ngang */
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2; /* chắc chắn nằm trên video */
+    padding: 0 30px;
+}
+.videobackground .overlay{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.videobackground .video-overlay h1{
+    font-size: 64px;
+    white-space: nowrap;  /* không cho xuống dòng */
+    padding-bottom: 20px;
+    font-style: italic; /* chữ nghiêng */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+.videobackground .video-overlay p{
+    max-width: 784px;
+    margin: 0 auto;     /* căn giữa đoạn mô tả */
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+
+
+.chon-logo {
+    /* transform: translate3d(0px, 0px, 0px); */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+.khung-logo{
+    text-align: center;
+    justify-items: center;
+    cursor: pointer;     /* Biến con trỏ chuột thành bàn tay */
+    opacity: 0.5;        /* Mờ đi một chút */
+    transition: 0.3s;    /* Hiệu ứng chuyển đổi mượt */
+}
+/* Khi di chuột vào hoặc khi đang được chọn (có class active) */
+.khung-logo:hover, 
+.khung-logo.active {
+    opacity: 1;          /* Sáng rõ lên */
+    transform: scale(1.1); /* Phóng to nhẹ lên 1 xíu */
+}
+/* Style cho chữ bên dưới logo */
+.khung-logo p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px; /* Giãn chữ ra cho sang */
+}
+.phahuycancu-tieu-de,.phahuycancu-mo-ta{
+    display: flex;
+    justify-content: center;
+}
+.cho-an-nut{
+    color: white;
+}
+
+/* --- SECTION PHÁ HỦY CĂN CỨ --- */
+.phahuycancu {
+    position: relative;
+    top: -31px;
+    background-color: rgb(10, 20, 40);
+    padding: 80px 48px; /* Padding rộng ra cho thoáng */
+    
+    /* QUAN TRỌNG: CHUYỂN SANG HÀNG NGANG */
+    display: flex;
+    flex-direction: row; 
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center;
+    gap: 50px; /* Khoảng cách giữa Cột Trái và Cột Phải */
+}
+
+/* --- CỘT TRÁI (Chữ & Nút) --- */
+.cho-an-nut {
+    width: 40%; /* Chiếm 40% chiều rộng */
+    color: white;
+    text-align: center; /* Căn giữa nội dung bên trong cột trái */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10; /* Đảm bảo nổi lên trên */
+}
+
+.phahuycancu-tieu-de {
+    font-family: "Beaufort for LOL", sans-serif;
+    font-size: 64px; /* To hơn cho giống ảnh */
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.phahuycancu-mo-ta {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 100%; /* Giới hạn độ rộng chữ để không bị bè */
+    margin-bottom: 40px;
+    color: #f0f0f0;
+}
+
+/* Logo và Nút bấm */
+.chon-logo {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.khung-logo {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
+    text-align: center;
+}
+.khung-logo:hover, .khung-logo.active {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.khung-logo img {
+    width: 80px;
+    margin-bottom: 10px;
+    margin: 0 auto; /* Căn giữa ảnh logo */
+}
+.khung-logo p {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* --- CỘT PHẢI (Wrapper chứa Map + Text dưới Map) --- */
+.col-right {
+    width: 60%; /* Chiếm 60% chiều rộng */
+    max-width: 900px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+/* Khung ảnh Map */
+.nhachinh {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Chiều cao cố định cho khung ảnh */
+    margin-bottom: 20px; /* Khoảng cách với dòng chữ bên dưới */
+}
+
+.nhachinh > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;          /* Mặc định ẩn */
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1;
+}
+/* Style chung cho ảnh bên trong */
+.nhachinh > div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.anh1, .anh2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.anh1 img, .anh2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Dùng contain để thấy trọn vẹn map isometric */
+    object-position: center; 
+}
+
+/* Text Mô tả chi tiết (Nằm dưới Map) */
+.khung-mota-chitiet {
+    position: relative;
+    width: 100%;
+    height: 100px; /* Giữ chỗ cho chữ không bị nhảy layout */
+    text-align: center; /* Căn giữa giống ảnh mẫu */
+}
+/* 2. Định vị tất cả các khung chữ con nằm chồng lên nhau */
+.khung-mota-chitiet > div {
+    position: absolute;
+    top: 0;
+    /* Căn chỉnh vị trí chữ tùy theo layout (Right hoặc Center) */
+    /* Ở đây ta để width 100% và text-align inherit để nó theo cha */
+    width: 100%; 
+    opacity: 0;          /* Mặc định ẩn */
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+/* Style chung cho Tiêu đề (H3) bên trong */
+.khung-mota-chitiet > div h3 {
+    font-family: "Beaufort for LOL", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: white; /* Màu mặc định */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.mota-1, .mota-2 {
+    position: absolute;
+    top: 0;
+    right: 0; /* Căn sát lề phải */
+    width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.mota-1 h3, .mota-2 h3 {
+    font-family: "Beaufort for LOL", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.mota-1 h3 { color: white; }
+.mota-2 h3 { color: white; }
+
+.mota-1 p, .mota-2 p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #f0f0f0;
+    max-width: 500px; /* Giới hạn độ dài dòng chữ */
+    margin: 0 auto;
+}
+
+/* Mặc định ẩn/hiện */
+.mota-2, .anh2 { opacity: 0; z-index: 1; }
+.mota-1, .anh1 { opacity: 1; z-index: 2; }
+.khung-mota-chitiet > div p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #f0f0f0;
+    max-width: 500px;
+    margin: 0 auto; /* Căn giữa */
+}
+
+/* phần tăng sức mạnh*/
+/* --- CSS CHUNG CHO SECTION --- */
+.tangsucmanhtuong {
+    background-color: rgb(10, 20, 40);
+    position: relative;
+    bottom: 31px;
+    color: #f0f0f0;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.h1-tangsucmanhtuong h1 {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.mota-tangsucmanhtuong {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    line-height: 1.6;
+    color: #c6c6c6;
+}
+
+/* --- PHẦN MEDIA (VIDEO/ẢNH) --- */
+.video-tangsucmanhtuong {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    position: relative;
+    /* Giữ chiều cao ổn định để không bị giật layout khi chuyển */
+    min-height: 400px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-content {
+    display: none; /* Mặc định ẩn hết */
+    width: 100%;
+    animation: fadeIn 0.5s ease;
+}
+
+.media-content.active {
+    display: block; /* Chỉ hiện cái có class active */
+}
+
+.media-content video, 
+.media-content img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #333;
+}
+
+/* --- PHẦN ICON (NÚT BẤM) --- */
+.chon-logo-tangsucmanh {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.wrapper-icons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+
+
+
+.khung-logo-2 img {
+    width: auto;    
+    height: auto;
+    max-width: 100%;   
+    max-height: 100%;  
+    object-fit: contain; 
+    
+    /* --- SỬA PHẦN NÀY --- */
+    filter: grayscale(100%); /* Vẫn giữ xám để biết chưa chọn */
+    opacity: 0.4;            /* Độ mờ: 0 là ẩn hẳn, 1 là rõ nhất. 0.4 là mờ sương sương */
+    
+    transition: all 0.3s ease;
+}
+
+/* QUAN TRỌNG: Phải thêm đoạn này để khi chọn (active) hoặc di chuột vào thì nó rõ lên */
+.khung-logo-2.active img,
+.khung-logo-2:hover img {
+    filter: grayscale(0%);   /* Trả lại màu gốc */
+    opacity: 1;              /* Hiện rõ 100% */
+}
+
+
+
+/* Trạng thái đang chọn (Active) */
+.khung-logo-2.active {
+    border: 2px solid #d0a85c; /* Viền vàng kim loại */
+    background-color: #1a1a1a;
+}
+
+/* Tạo mũi tên nhỏ chỉ lên trên icon active (giống web LoL) */
+.khung-logo-2.active::after {
+    content: '';
+    position: absolute;
+    bottom: -28px; /* Đẩy xuống chạm đường kẻ */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent transparent; 
+    /* Nếu muốn mũi tên, chỉnh lại border-color. Ở đây ta dùng gạch dưới chân icon */
+}
+
+.khung-logo-2.active img {
+    filter: grayscale(0%); /* Hiện màu icon */
+}
+
+/* --- PHẦN NỘI DUNG CHỮ BÊN DƯỚI --- */
+.noidungtangsumanh {
+    max-width: 700px;
+    margin: 0 auto;
+    min-height: 150px; /* Giữ chiều cao tránh nhảy layout */
+}
+
+.text-content {
+    display: none;
+    animation: slideUp 0.4s ease;
+}
+
+.text-content.active {
+    display: block;
+}
+
+.text-content h3 {
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+}
+
+
+
+.text-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #a0a0a0;
+}
+/* phần thưởng lên cấp */
+/* =========================================
+   STYLE MỚI CHO PHẦN THƯỞNG LÊN CẤP và PHẦN THƯƠNG ĐĂNG NHẬP
+   ========================================= */
+
+@font-face {
+    font-family: 'Beaufort for LOL';
+    src: local('Arial'); /* Font fallback nếu chưa có file font thật */
+}
+
+#phan-thuong-len-cap, #phan-thuong-dang-nhap {
+    width: 100%;
+
+    position: relative;
+    top: -31px;
+    /* max-width: 1200px; */
+    padding: 40px 20px;
+    margin: 0 auto; /* Căn giữa section */
+    text-align: center;
+    overflow: hidden;
+    background-color: #0a1428;
+    color: #f0f0f0;
+}
+
+/* --- HEADER --- */
+#phan-thuong-len-cap .section-header, #phan-thuong-dang-nhap .section-header2 { margin-bottom: 40px; }
+#phan-thuong-len-cap .sub-title , #phan-thuong-dang-nhap .sub-title2 {
+    font-size: 14px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: #ffffff; margin-bottom: 10px;
+}
+#phan-thuong-len-cap h2, #phan-thuong-dang-nhap h2 {
+    font-family: 'Beaufort for LOL', serif; font-style: italic;
+    font-size: 48px; text-transform: uppercase; color: #ffffff;
+    letter-spacing: 2px; text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* --- MAIN DISPLAY --- */
+.reward-display,.reward-display2 {
+    position: relative;
+    width: 100%; max-width: 1184px;
+    aspect-ratio: 16/9;
+    margin: 0 auto 30px auto;
+    background: #010a13;
+    border: 1px solid #333;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+.reward-image {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: contain;
+    opacity: 0; transition: opacity 0.4s ease-in-out; pointer-events: none;
+}
+.reward-image.active { opacity: 1; }
+
+/* --- CAROUSEL CONTAINER --- */
+.carousel-wrapper , .carousel-wrapper2 {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carousel-viewport2{
+    border-bottom: 1px solid #fff;
+}
+/* --- VIEWPORT (KHUNG NHÌN) --- */
+.carousel-viewport , .carousel-viewport2 {
+    overflow: hidden;
+    /* Tính toán width: (60px * 7) + (20px * 6) = 420 + 120 = 540px */
+    width: 864px; 
+    max-width: 100%;
+    padding: 20px 0;
+    
+    /* Mask mờ 2 bên cạnh */
+    /* mask-image: linear-gradient(to right, transparent, black 2%, black 98%, transparent); */
+    /* -webkit-mask-image: linear-gradient(to right, transparent, black 2%, black 98%, transparent); */
+}
+
+.carousel-track , .carousel-track2 {
+    display: flex;
+    align-items: center;
+    /* gap: 20px; */
+    width: 864px;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    padding-left: 0;
+}
+
+/* --- ITEM KIM CƯƠNG --- */
+.carousel-item {
+    width: 117px; height: 66px;
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    opacity: 0.5;
+    /* filter: grayscale(100%); */
+}
+.carousel-item img {
+    width: 100%; height: 100%;
+    object-fit: contain; display: block;
+}
+.carousel-item:hover {
+    opacity: 1; filter: grayscale(0%);
+    /* transform: scale(1.05); */
+}
+/* Active State */
+.carousel-item.active{
+
+    opacity: 1; filter: grayscale(0%);
+    /* transform: scale(1); */
+     z-index: 10;
+        outline: 2px solid #c8aa6e; /* màu viền */
+    outline-offset: -2px;        /* tách nhẹ ra */
+}
+/* Hiệu ứng bóng sáng cho item active */
+/* .carousel-item.active img { drop-shadow: 0 0 8px #c8aa6e; } */
+
+/* --- CONTROLS (PROGRESS + ARROWS) --- */
+.carousel-controls , .carousel-controls2 {
+    width: 864px; 
+    max-width: 100%;
+    margin-top: 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Progress Bar Container */
+.progress-container , .progress-container2 {
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.progress-bar , .progress-bar2 {
+    position: absolute; left: 0; top: 0;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    width: 0%; transition: width 0.3s ease;
+}
+/* .progress-bar::after {
+    content: ''; position: absolute; right: -3px; top: 50%;
+    transform: translateY(-50%);
+    width: 6px; height: 6px;
+    background-color: #c8aa6e; border-radius: 50%;
+    box-shadow: 0 0 5px #c8aa6e;
+} */
+
+/* Nút Mũi Tên */
+.nav-wrapper , .nav-wrapper2 {
+    display: flex;
+    gap: 10px;
+}
+.nav-btn , .nav-btn2 {
+    background: none; border: none;
+    color: #c8aa6e;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s, color 0.2s;
+    display: flex; align-items: center; justify-content: center;
+}
+.nav-btn:hover , .nav-btn2:hover { color: #f0e6d2; transform: scale(1.2); }
+.nav-btn:disabled , .nav-btn2:disabled { color: #3c3c41; cursor: default; transform: none; }
+.nav-btn svg , .nav-btn2 svg { width: 24px; height: 24px; }
+
+/* --- INFO TEXT --- */
+.reward-info-container , .reward-info-container2 {
+    margin-top: 30px; position: relative; min-height: 100px;
+        width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.reward-info { display: none; animation: fadeUp 0.5s ease; }
+.reward-info.active { display: block;text-align: left;
+    width: 864px; max-width: 100%; }
+.reward-info h3 {
+    font-family: 'Beaufort for LOL', serif;
+    font-size: 24px; font-weight: 700; color: #ffffff;
+    text-transform: uppercase; margin-bottom: 10px; letter-spacing: 1px;
+}
+.reward-info p {
+    font-size: 14px; color: #ffffff;
+    max-width: 600px;  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .carousel-viewport,.carousel-viewport2, .carousel-controls, .carousel-controls2 { width: 100%; padding-left: 20px; padding-right: 20px;}
+    #phan-thuong-len-cap h2,#phan-thuong-dang-nhap h2 { font-size: 32px; }
+}
+/* các vị tướng */
+/* =========================================
+   STYLE CHO SECTION "CÁC VỊ TƯỚNG"
+   ========================================= */
+
+#cac-vi-tuong {
+    top: -31px;
+    position: relative;
+    width: 100%;
+    /* Xóa background gradient cũ, dùng layer ảnh riêng */
+    padding: 80px 48px;
+    color: #fff;
+    overflow: hidden;
+    /* Min-height để đảm bảo hiển thị đẹp */
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+}
+
+/* --- BACKGROUND LAYER (NỀN TƯỚNG PHÓNG TO) --- */
+.champion-bg-container {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 0; /* Nằm dưới cùng */
+    overflow: hidden;
+}
+
+/* .bg-overlay { */
+    /* position: absolute; */
+    /* top: 0; left: 0; */
+    /* width: 100%; height: 100%; */
+    /* Màu xanh đen đậm, độ trong suốt vừa phải để thấy ảnh nền */
+    /* background: rgba(6, 11, 20, 0.7);  */
+    /* z-index: 2; */
+    /* Gradient tối dần ở các cạnh */
+    /* background: radial-gradient(circle at 70% 50%, rgba(10, 20, 40, 0.4), rgba(3, 5, 10, 0.95)); */
+/* } */
+
+.champ-bg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+    opacity: 0;
+    /*transform: scale(1.1);  Phóng to nhẹ ảnh nền */
+    /* transition: opacity 0.8s ease-in-out; */
+    z-index: 1;
+    /* KHÔNG dùng grayscale, chỉ làm mờ nhẹ */
+    /* filter: blur(4px); */
+}
+
+.champ-bg.active {
+    opacity: 1;
+}
+
+/* --- CONTAINER CHÍNH --- */
+.champions-container {
+    position: relative;
+    z-index: 5; /* Nổi lên trên nền */
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* --- CỘT TRÁI --- */
+.champions-left {
+    width: 50%;
+    text-align: center; /* CĂN GIỮA TOÀN BỘ CỘT TRÁI */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Flexbox căn giữa */
+}
+
+.header-group .sub-title {
+    font-size: 14px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: #fff; margin-bottom: 5px;
+}
+
+.header-group h2 {
+    font-family: 'Beaufort for LOL', serif; font-style: italic;
+    font-size: 64px;
+    font-weight: 800;
+    text-transform: uppercase; color: #fff;
+    margin-bottom: 30px;
+    line-height: 1;
+}
+
+.btn-wrapper { margin-bottom: 50px; }
+.btn-gold {
+    display: inline-block;
+    padding: 18px 43px;
+    background-color: #c8aa6e;
+    color: #0a1428;
+    /* font-weight: 700; */
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+    transition: background 0.3s;
+    border: 1px solid #c8aa6e;
+}
+.btn-gold:hover { 
+    /* background-color: transparent; */
+    background-color: #d3bb8b;
+    /* color: #c8aa6e; */
+}
+
+/* Carousel Tướng (Tròn nhỏ) */
+.champion-carousel-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 736px; /* Giới hạn chiều rộng để căn giữa đẹp hơn */
+    /* Thêm padding-bottom để chứa tên tướng */
+    padding-bottom: 40px; 
+}
+
+.champion-viewport {
+    width: 100%;
+    /* Bỏ overflow hidden ở đây nếu nó cắt mất tên tướng, hoặc tăng height */
+    /* Tuy nhiên để trượt mượt thì cần overflow hidden. Giải pháp: tăng padding bottom cho viewport */
+    overflow: hidden;
+    padding: 20px 0 40px 0; /* Padding dưới rộng ra để chứa tên */
+    /* Chỉ làm mờ bên phải, bên trái giữ nguyên để không che item đầu */
+    mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+}
+
+.champion-track {
+    /* padding: 10px; */
+    display: flex;
+    gap: 45px;
+    transition: transform 0.4s ease-out;
+    padding-left: 10px;
+    /* Bỏ justify-center để track bắt đầu từ trái, dễ tính toán scroll */
+    justify-content: flex-start; 
+}
+
+.champ-item {
+    cursor: pointer;
+    text-align: center;
+    flex-shrink: 0;
+    /* Opacity gốc là 1 để thấy rõ effect brightness */
+    opacity: 1; 
+    transition: all 0.3s ease;
+    transform-origin: center top; /* Zoom từ trên xuống để không đẩy tên đi quá xa */
+    width: 70px; /* Cố định width */
+    position: relative; /* Để định vị tên tuyệt đối theo item */
+}
+
+.champ-item .img-circle {
+    width:96px; height: 96px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    /* Áp dụng filter làm tối lên khung tròn */
+    filter: brightness(0.5);
+}
+
+/* Ảnh bên trong chỉ cần fit, filter áp dụng ở khung ngoài */
+.champ-item img {
+    width: 100%; height: 100%; object-fit: cover;
+    transform: scale(1.1);
+}
+
+.champ-name-hover {
+    position: absolute;
+    top: 110px; /* Đặt dưới ảnh tròn (70px + margin) */
+    left: 70%;
+    transform: translateX(-50%);
+    
+    font-size: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+    /* Mặc định ẩn */
+    /* opacity: 0;  */
+    /* visibility: hidden; */
+    
+    transition: opacity 0.3s;
+    letter-spacing: 1px;
+    color: #ffffff;
+    white-space: nowrap;
+    z-index: 20; /* Đảm bảo tên nổi lên trên */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8); /* Thêm bóng đổ để dễ đọc trên nền */
+}
+
+/* Active State */
+.champ-item.active { 
+    transform: scale(1.15); 
+    z-index: 10; 
+}
+
+.champ-item.active .img-circle {
+    border-color: #c8aa6e;
+    box-shadow: 0 0 15px rgba(200, 170, 110, 0.4);
+    /* Trả lại độ sáng bình thường khi active */
+    filter: brightness(1);
+}
+
+/* Hiện tên khi active */
+.champ-item.active .champ-name-hover { 
+    opacity: 1; 
+    visibility: visible;
+}
+
+/* --- THANH ĐIỀU KHIỂN DƯỚI (Progress + Nav) --- */
+.champ-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Giảm margin-top vì đã có padding-bottom ở viewport */
+    margin-top: 10px; 
+    gap: 15px;
+}
+
+.champ-progress-container {
+    flex-grow: 1;
+    height: 1px;
+    background: #333;
+    position: relative;
+}
+.bar-fill {
+    position: absolute; left: 0; top: 0; height: 100%;
+    width: 0%; background: #c8aa6e;
+    transition: width 0.3s;
+}
+/* Hạt sáng đầu thanh progress */
+.bar-fill::after {
+    content: ''; position: absolute; right: -2px; top: 50%;
+    transform: translateY(-50%);
+    width: 4px; height: 4px;
+    background: #c8aa6e; border-radius: 50%;
+    box-shadow: 0 0 5px #c8aa6e;
+}
+
+.champ-nav-btns {
+    display: flex;
+    gap: 10px;
+}
+.c-nav-btn {
+    background: none; border: none;
+    color: #c8aa6e;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s, color 0.2s;
+    display: flex; align-items: center; justify-content: center;
+}
+.c-nav-btn:hover { color: #fff; transform: scale(1.2); }
+.c-nav-btn svg { width: 20px; height: 20px; }
+
+
+/* --- CỘT PHẢI (ẢNH LỚN) --- */
+.champions-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+}
+
+.champ-featured-img {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    /* Viền mờ tỏa sáng */
+    box-shadow: 0 0 0 1px rgba(200,170,110, 0.3), 0 0 50px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+    background-color: #010a13;
+}
+
+.circle-mask img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    position: absolute; top: 0; left: 0;
+    opacity: 0;
+    transform: scale(1.2);
+    transition: opacity 0.5s ease, transform 6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.circle-mask img.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.champ-info-box {
+    text-align: center;
+    min-height: 120px;
+}
+.info-content { display: none; animation: slideUp 0.5s ease; }
+.info-content.active { display: block; }
+
+.info-content h3 {
+    font-family: 'Beaufort for LOL', serif;
+    font-style: italic;
+    font-size: 32px; /* Tăng kích thước tên tướng */
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+.info-content .role {
+    font-size: 12px;
+    font-weight: 700;
+    color: #a09b8c;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+.info-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #f0f0f0;
+    max-width: 736px;
+    margin: 0 auto;
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .champions-container { flex-direction: column; text-align: center; }
+    .champions-left, .champions-right { width: 100%; }
+    .champion-carousel-wrapper { max-width: 100%; }
+    .champ-featured-img { width: 300px; height: 300px; }
+}
+/* end các vị tướng */
+
+/* chơi miễn phí */
+.choimienphi {
+    position: relative;
+    width: 1905px;
+    height: 640px;
+    top:-32px;
+    display: flex;
+    justify-content: center; /* căn giữa ngang */
+    align-items: center;     /* căn giữa dọc */
+}
+
+.content a:hover {
+    background: rgb(220, 190, 130);
+
+}
+
+.content a {
+    text-decoration: none;
+    margin: 0;
+    color: #000; /* nếu muốn đổi màu chữ */
+    font-size: 18px; /* tùy bạn */
+    /* font-weight: 700; */
+
+    background: rgb(200, 170, 110);
+    padding: 18px 25px;
+}
+
+/* end chơi miễn phí */
+/* footer */
+        /* --- BỔ SUNG: STYLING CHO FOOTER --- */
+        .main-footer-container {
+                top: -31px;
+            position: relative;
+            background-color: #1a1a1a;
+            color: #a0a0a0;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: auto; /* Đẩy footer xuống cuối cùng của flex container */
+        }
+
+        .footer-nav-top ul,
+        .footer-nav-bottom ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Cho phép xuống dòng trên màn hình nhỏ */
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            gap: 15px 30px;
+        }
+
+        .footer-nav-top ul li a,
+        .footer-nav-bottom ul li a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.2s ease;
+        }
+
+        .footer-nav-top ul li a:hover,
+        .footer-nav-bottom ul li a:hover {
+            color: #c4c4c4;
+        }
+
+        .footer-social-links {
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-social-links a {
+            color: #888;
+            transition: color 0.2s ease;
+        }
+
+        .footer-social-links a:hover {
+            color: #fff;
+        }
+
+        .footer-social-links svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        .footer-logos {
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Cho phép xuống dòng trên màn hình nhỏ */
+            gap: 20px;
+        }
+
+        .footer-logos .riot-logo-footer svg {
+            height: 30px;
+            width: auto;
+            fill: #777;
+        }
+
+        .footer-logos .vng-logo-footer {
+            font-size: 28px;
+            font-weight: 800;
+            color: #777;
+            letter-spacing: -1px;
+            font-style: italic;
+            /* Placeholder đơn giản cho logo VNG Games */
+            font-family: 'Inter', sans-serif; 
+        }
+
+        .footer-copyright {
+            font-size: 12px;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            line-height: 1.6;
+            color: #777;
+        }
+
+        .footer-nav-bottom {
+            margin-bottom: 30px;
+        }
+
+        .footer-age-rating {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            border: 2px solid #555;
+            background-color: #000;
+            padding: 15px 20px;
+            width: 280px;
+            border-radius: 4px;
+        }
+
+        .age-rating-18 {
+            font-size: 60px;
+            font-weight: 900;
+            color: #fff;
+            line-height: 1;
+            border-right: 2px solid #555;
+            padding-right: 15px;
+            margin-right: 15px;
+        }
+
+        .age-rating-text {
+            font-size: 13px;
+            color: #fff;
+            text-align: left;
+            line-height: 1.5;
+        }
+
+/* end footer */
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+/* Responsive: Khi màn hình nhỏ (điện thoại/tablet dọc) thì chuyển về cột dọc */
+@media (max-width: 1024px) {
+    .phahuycancu {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+    .cho-an-nut, .col-right {
+        width: 100%;
+        align-items: center;
+    }
+    .khung-mota-chitiet {
+        text-align: center;
+    }
+    .mota-1 p, .mota-2 p {
+        margin: 0 auto; /* Căn giữa chữ */
+    }
+    .mota-1, .mota-2 {
+        right: auto; 
+        left: 0;
+    }
+}

@@ -1,0 +1,25 @@
+Tệp ảnh .avif là một định dạng ảnh mới có tên đầy đủ là AVIF (AV1 Image File Format). Đây là chuẩn nén ảnh dựa trên codec AV1 (cùng họ với video AV1).
+
+📌 Đặc điểm chính của ảnh .avif
+
+Dung lượng nhỏ hơn
+
+So với JPEG hoặc PNG, ảnh .avif thường có kích thước file nhỏ hơn 20–50% mà vẫn giữ được chất lượng tương đương.
+
+Tương tự như WebP, nhưng .avif thường nén tốt hơn.
+
+Chất lượng cao
+
+Hỗ trợ ảnh HDR (High Dynamic Range), độ sâu màu 10–12 bit.
+
+Giữ chi tiết tốt hơn khi nén mạnh.
+
+Tính năng hiện đại
+
+Hỗ trợ transparency (ảnh nền trong suốt) giống PNG.
+
+Có thể lưu được ảnh động (animated AVIF) giống GIF hoặc WebP động.
+
+Mã nguồn mở & miễn phí bản quyền
+
+AVIF được phát triển bởi Alliance for Open Media (AOMedia), cùng nhóm với Google, Netflix, Amazon, Microsoft...
