@@ -98,7 +98,7 @@ main {
         #lightbox-modal > .video-container {
             position: relative;
             width: 90%;
-            max-width: 900px;
+            /* max-width: 900px; */
             aspect-ratio: 16 / 9;
             background: #000;
             box-shadow: 0 0 20px rgba(0,0,0,0.8);
@@ -115,11 +115,15 @@ main {
         /* Nút đóng nằm trực tiếp trong modal */
         #lightbox-modal > .close-btn {
             position: absolute;
-            top: 20px; right: 30px;
-            color: #fff;
+            width: 34px;
+            height: 34px;
+            background-color: #c8aa6e;
+            color: black;
+            top: 10px; right: 10px;
             font-size: 40px;
             cursor: pointer;
-            background: none; border: none;
+            /* background: none; */
+            border: none;
             z-index: 10001;
             line-height: 1;
         }

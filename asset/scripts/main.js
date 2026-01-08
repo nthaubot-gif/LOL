@@ -21,8 +21,8 @@
             const videoId = getYouTubeID(videoLink);
 
             if (videoId) {
-                // Thêm autoplay=1 để video tự chạy
-                iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+                // Thêm autoplay=0 để video không tự chạy
+                iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=0&rel=0`;
                 modal.style.display = 'flex';
                 setTimeout(() => { modal.classList.add('active'); }, 10);
             } else {
