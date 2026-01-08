@@ -1,5 +1,53 @@
 // asset/scripts/main.js
+// ==========================================
+// LIGHTBOX VIDEO YOUTUBE
+// ==========================================
+// --- LOGIC JAVASCRIPT GIỮ NGUYÊN ---
+        const triggers = document.querySelectorAll('.lightbox-trigger');
+        const modal = document.getElementById('lightbox-modal');
+        const iframe = document.getElementById('lightbox-iframe');
+        const closeBtn = document.querySelector('.close-btn');
 
+        function getYouTubeID(url) {
+            const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+            const match = url.match(regExp);
+            return (match && match[2].length === 11) ? match[2] : null;
+        }
+
+        function openLightbox(e) {
+            e.preventDefault(); // Chặn chuyển trang
+            const videoLink = this.getAttribute('href');
+            const videoId = getYouTubeID(videoLink);
+
+            if (videoId) {
+                // Thêm autoplay=1 để video tự chạy
+                iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+                modal.style.display = 'flex';
+                setTimeout(() => { modal.classList.add('active'); }, 10);
+            } else {
+                alert("Link video không hợp lệ!");
+            }
+        }
+
+        function closeLightbox() {
+            modal.classList.remove('active');
+            setTimeout(() => {
+                modal.style.display = 'none';
+                iframe.src = ""; // Tắt video
+            }, 300);
+        }
+
+        triggers.forEach(trigger => trigger.addEventListener('click', openLightbox));
+        closeBtn.addEventListener('click', closeLightbox);
+        
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeLightbox();
+        });
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === "Escape" && modal.style.display === 'flex') closeLightbox();
+        });
+// ==========================================
 document.addEventListener("DOMContentLoaded", function() {
     
     // Lấy tất cả các section (Phá hủy căn cứ, Dọn đường, Chọn đường...)
