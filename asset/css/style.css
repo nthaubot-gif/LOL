@@ -1798,25 +1798,196 @@ color: #0A1428;
 
 
 /* Responsive: Khi màn hình nhỏ (điện thoại/tablet dọc) thì chuyển về cột dọc */
-/* @media (max-width: 1024px) {
-    .phahuycancu {
-        flex-direction: column;
-        padding: 40px 20px;
-        text-align: center;
-    }
-    .cho-an-nut, .col-right {
-        width: 100%;
-        align-items: center;
-    }
-    .khung-mota-chitiet {
-        text-align: center;
-    }
-    .mota-1 p, .mota-2 p {
-        margin: 0 auto;
-        
-    }
-    .mota-1, .mota-2 {
-        right: auto; 
-        left: 0;
-    }
-} */
+@media (max-width: 1024px) {
+.background-header{
+    top: 78px;
+    height: 446px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.background-header img{
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.update-supertitle{
+    width: 100%;
+    height: 24px;
+
+}
+
+.update-supertitle p{
+    font-size: 16px;
+    line-height: 24px;
+}
+.update-header .update-title{
+    width: 100%;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 0;
+}
+.update-header .btn-primary{
+    line-height: 4;
+    padding: 18px 32px;
+    font-size: 14px;
+}
+.update-header .update-description{
+    font-size: 14px;
+    line-height: 22px;
+}
+.update-header{
+    left: 0px;
+    width: 390px;
+    padding: 210px 24px;
+    gap: 16px;
+}
+.update-container{
+    width: 390px;
+    padding-inline: 0 10px;
+    margin: 0 0;
+    position: absolute;
+    justify-content: center;
+    /* right: 0; */
+
+}
+.section-header{
+    width: 390px;
+    padding-top: 100px;
+}
+.section-header .section-supertitle{
+    padding-top: 100px;
+    font-size: 15px;
+    line-height: 24px;
+}
+.section-header .section-supertitle,.section-header .section-title, .section-header .section-body{
+    width: 390px;
+}
+.section-header > .section-title > h2{
+    font-size: 48px;
+    line-height: 56px;
+}
+.section-header > .section-body > p{
+    font-size: 13px;
+    line-height: 22px;
+    padding-inline: 24px;
+}
+.videobackground .video-overlay{
+    width: 390px;
+    top: 40%;
+}
+.videobackground .video-overlay h2{
+    width: 342px;
+    white-space: unset;
+    font-size: 50px;
+    line-height: 56px;
+}
+.videobackground .video-overlay p{
+    font-size: 13px;
+    line-height: 22px;
+}
+.phahuycancu{
+    flex-direction: column;
+}
+.cho-an-nut{
+    width: 342px;
+}
+.phahuycancu-tieu-de{
+    font-size: 46px;
+    line-height: 56px;
+}
+.phahuycancu-mo-ta{
+    font-size: 13px;
+    line-height: 22px;
+}
+.khung-logo img{
+    width: 64px;
+}
+.khung-logo{
+    width: 64px;
+}
+.khung-logo p{
+    font-size: 8px;
+    line-height: 14px;
+}
+.khung-logo:hover, .khung-logo.active{
+    width: 64px;
+    opacity: 1;
+    transform: scale(1.1);
+
+}
+.nhachinh{
+    width: 390px;
+    height: 300px;
+}
+.khung-mota-chitiet{
+    width: 340px;
+}
+.khung-mota-chitiet > div p{
+    font-size: 13px;
+    line-height: 22px;
+}
+.video-tangsucmanhtuong{
+    min-height: 0;
+}
+.champ-bg{
+    height: 100%;
+}
+.champions-container{
+    flex-direction: column;
+}
+.header-group{
+    width: 342px;
+}
+.header-group h2{
+    font-size: 46px;
+    line-height: 56px;
+}
+
+.btn-gold{
+    font-size: 14px;
+}
+.champions-left{
+    width: 342px;
+}
+.champ-item .img-circle{
+    width: 64px;
+    height: 64px;
+}
+.champ-item img{
+    width: 64px;
+    height: 64px;
+}
+
+.champion-track{
+    gap: 16px;
+}
+
+.circle-mask img{
+    width: 342px;
+    height: 342px;
+}
+.champ-featured-img{
+    width: 342px;
+    height: 342px;
+}
+.info-content.active{
+    width: 342px;
+}
+.info-content h3{
+    font-size: 19px;
+    line-height: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
