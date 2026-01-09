@@ -522,7 +522,7 @@ main {
 
 /* background-header */
 .background-header img{
-    width: 1920px;
+    width: 100%;
     height: 100%;
     /* display: flex; */
 }
