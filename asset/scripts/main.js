@@ -249,91 +249,82 @@ if (wrapperIcons && tangSucManhSection) {
 
 
 // ============================================================
-// XỬ LÝ RIÊNG CHO PHẦN: PHẦN THƯỞNG ĐĂNG NHẬP (LEVEL 1-10) - CAROUSEL MỚI
+// CAROUSEL - PHẦN THƯỞNG ĐĂNG NHẬP
 // ============================================================
- const carouselWrapper = document.querySelector(".carousel-wrapper2");
-const carouselTrack = carouselWrapper ? carouselWrapper.querySelector(".carousel-track2") : null;
 
-if (carouselWrapper && carouselTrack) {
+const loginSection = document.getElementById("phan-thuong-dang-nhap");
+
+if (loginSection) {
+    const track = loginSection.querySelector(".carousel-track2");
+    const items = loginSection.querySelectorAll(".carousel-item");
+    const images = loginSection.querySelectorAll(".reward-image");
+    const infos = loginSection.querySelectorAll(".reward-info");
 
     let isDragging = false;
     let startX = 0;
     let currentTranslate = 0;
     let draggedDistance = 0;
 
-    // TRACK ITEMS
-    const items = carouselTrack.querySelectorAll(".carousel-item");
-
-    // LARGE IMAGE + INFO
-    const bigImages = document.querySelectorAll(".reward-image");
-    const infos = document.querySelectorAll(".reward-info");
-
-    // --- MOUSE DOWN ---
-    carouselTrack.addEventListener("mousedown", (e) => {
+    // ==========================
+    // DRAG TRACK
+    // ==========================
+    track.addEventListener("mousedown", (e) => {
         isDragging = true;
         draggedDistance = 0;
         startX = e.clientX - currentTranslate;
-
-        carouselTrack.style.transition = "none";
-        carouselTrack.style.cursor = "grabbing";
+        track.style.transition = "none";
+        track.style.cursor = "grabbing";
         e.preventDefault();
     });
 
-    // --- MOUSE MOVE ---
     window.addEventListener("mousemove", (e) => {
         if (!isDragging) return;
 
-        const x = e.clientX;
-        currentTranslate = x - startX;
+        currentTranslate = e.clientX - startX;
         draggedDistance = Math.abs(currentTranslate);
 
-        // Giới hạn kéo (cho vui, không cho trượt quá xa)
-        if (currentTranslate > 100) currentTranslate = 100;
-        if (currentTranslate < -100) currentTranslate = -100;
-
-        carouselTrack.style.transform = `translate3d(${currentTranslate}px, 0, 0)`;
+        currentTranslate = Math.max(-100, Math.min(100, currentTranslate));
+        track.style.transform = `translateX(${currentTranslate}px)`;
     });
 
-    // --- MOUSE UP ---
     window.addEventListener("mouseup", () => {
         if (!isDragging) return;
 
         isDragging = false;
-        carouselTrack.style.cursor = "grab";
-
-        // nảy về giữa
-        carouselTrack.style.transition =
-            "transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)";
+        track.style.cursor = "grab";
+        track.style.transition =
+            "transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)";
         currentTranslate = 0;
-        carouselTrack.style.transform = "translate3d(0, 0, 0)";
+        track.style.transform = "translateX(0)";
     });
 
-    // --- CLICK ITEM ---
-    items.forEach(item => {
-        item.addEventListener("click", function (e) {
+    // ==========================
+    // CLICK ITEM → ĐỔI ẢNH + INFO
+    // ==========================
+    items.forEach((item) => {
+        item.addEventListener("click", (e) => {
 
-            // Nếu kéo quá 5px ➝ không tính click
             if (draggedDistance > 5) {
                 e.preventDefault();
                 e.stopPropagation();
                 return;
             }
 
-            // Xử lý chuyển tab
-            const index = parseInt(this.getAttribute("data-index"));
+            const index = Number(item.dataset.index);
 
-            // Remove active
+            // reset
             items.forEach(i => i.classList.remove("active"));
-            bigImages.forEach(img => img.classList.remove("active"));
+            images.forEach(img => img.classList.remove("active"));
             infos.forEach(info => info.classList.remove("active"));
 
-            // Add active đúng cái được click
-            this.classList.add("active");
-            bigImages[index].classList.add("active");
-            infos[index].classList.add("active");
+            // active đúng index
+            item.classList.add("active");
+            images[index]?.classList.add("active");
+            infos[index]?.classList.add("active");
         });
     });
 }
+
 
 
 // ============================================================
