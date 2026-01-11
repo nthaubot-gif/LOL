@@ -1,0 +1,1164 @@
+/* Header styles extracted from style.css */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 30px;
+    height: 80px;
+    box-sizing: border-box;
+    position: static;
+    background-color: rgb(0, 0, 0);
+}
+
+/*Begin Header Left */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+.header-left:hover .icon-logo svg,
+.header-left:hover .logo-riot svg {
+    cursor: pointer;
+    fill: red;
+}
+
+.logo-riot svg {
+    width: 75px;
+    height: 24px;
+    fill: #f9f9f9;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-margin-top: 80px;
+    text-align: left;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Neue Frutiger World", Tahoma, sans-serif;
+    tab-size: 4;
+    text-rendering: optimizeSpeed;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+}
+
+.header-container .icon-logo svg {
+    box-sizing: border-box;
+    color: rgb(85, 26, 139);
+    display : block;
+    font-family: "Neue Frutiger World", Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    height: 5px;
+    margin: 0;
+    padding: 0;
+    scroll-margin-top: 80px;
+    tab-size: 4;
+    text-align: left;
+    text-rendering: optimizeSpeed;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    width: 20px;
+    fill: #7e7e7e;
+
+}
+
+.logo-league-tablet {
+    display: none;
+    width: 120px;
+    height: auto;
+    margin-left: 10px;
+}
+
+/*End Header Left */
+
+
+/*Begin Header Center */
+.header-center {
+    align-items:center;
+    box-sizing:border-box;
+    color: rgb(10, 20, 40);
+    display:flex;
+    flex-basis:0%;
+    flex-grow:1;
+    flex-shrink:1;
+    font-family:"Neue Frutiger World", Tahoma, sans-serif;
+    font-size:14px;
+    font-weight:700;
+    height:78.4px;
+    justify-content:flex-start;
+    line-height:normal;
+    margin: 0 !important;
+    padding:0;
+    scroll-margin-top:80px;
+    tab-size:4;
+    text-align:left;
+    text-rendering:optimizespeed;
+    text-size-adjust:100%;
+    unicode-bidi:isolate;
+    width:809.938px;
+}
+
+/* allow dropdowns to escape any ancestor clipping */
+.header-container,
+.header-center {
+    overflow: visible;
+}
+
+.logo-center-desktop {
+    height: 80px;
+    margin-left: 22px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo-center-desktop svg {
+    box-sizing: border-box;
+    color: rgb(85, 26, 139);
+    display: block;
+    font-family:"Neue Frutiger World", Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    height: 26px;
+    margin: 0;
+    min-width:38px;
+    padding: 0;
+    scroll-margin-top: 80px;
+    tab-size: 4;
+    text-align: left;
+    text-decoration-color: rgb(0, 0, 238);
+    text-decoration-line: none;
+    text-size-adjust: 100%;
+    width:38px;
+    text-rendering: optimizeSpeed;
+    text-decoration: line;
+    text-decoration-thickness: auto;
+    text-decoration-skip-ink: auto;
+    position: relative;
+}
+.header-center-ct {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+.header-center-ct a {
+    color: white;
+    position: relative;
+    text-decoration: none;
+    margin: 7px 0;
+    z-index: 1;
+}
+.header-center-ct a p {
+    padding: 7.5px 16px;
+    margin: 0 4px 0 0;
+    color:#f9f9f9;
+    font-size:13px;
+    font-family: "Neue Frutiger World", Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+.header-center-ct a:hover p {
+    background-color: rgba(128, 128, 128,.3);
+    border-radius: 6.4px;
+}
+
+.desktop-link-item-underline {
+    display: none;
+}
+
+
+.header-center-ct a:hover .desktop-link-item-underline {
+    display: block;
+    background-color: rgb(0, 160, 186);
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    height: 4px;
+    width: 100% !important;
+    border-radius: 2px;
+}
+
+
+.desktop-link-item-icon-linkout {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+
+/* Container chính của mục TIN TỨC */
+.dropdown-toggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 0 !important;
+}
+
+/* Style cho chữ "TIN TỨC" và mũi tên */
+.header-center-ct.dropdown-toggle > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 16px;
+    height: 100%;
+}
+
+.header-center-ct.dropdown-toggle > a p {
+    display: flex;
+    align-items: center;
+    color: #f9f9f9;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 !important; 
+}
+/* Hiệu ứng khi hover vào mục TIN TỨC trên Header */
+.dropdown-toggle:hover a p {
+    color: rgb(200,170,110) !important;
+}
+
+/* Menu xổ xuống */
+/* Menu xổ xuống */
+/* Menu xổ xuống */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    /* Đẩy xuống đúng bằng chiều cao của header hoặc vị trí thanh xanh */
+    top: 52px !important; 
+    left: 0;
+    background-color: #232323;
+    min-width: 200px;
+    width: 200px;
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    z-index: 1000;
+    border-radius: 0 0 4px 4px;
+}
+
+/* Tạo lớp đệm tàng hình để không bị mất hover khi di chuột xuống */
+.dropdown-toggle::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Bắt đầu ngay dưới mục TIN TỨC */
+    left: 0;
+    width: 100%;
+    height: 20px; /* Độ cao bao phủ khoảng trống giữa header và menu */
+    display: block;
+    z-index: 1;
+}
+
+/* Đảm bảo menu con luôn hiển thị khi chuột nằm trong lớp đệm */
+.dropdown-toggle:hover .dropdown-menu {
+    display: block;
+}
+/* Thanh trang trí màu xanh trên cùng của dropdown */
+.dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #00a0ba;
+}
+
+/* Style cho từng mục trong danh sách menu con */
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 20px;
+    color: #a3a3a3; /* Màu chữ xám mặc định */
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background 0.2s, color 0.2s;
+}
+
+/* Hiệu ứng khi hover vào các mục con */
+.dropdown-menu li a:hover {
+    background-color: #2b2b2b;
+    color: #ffffff; /* Chữ trắng khi hover */
+}
+
+/* Hiển thị menu khi hover vào mục cha */
+.dropdown-toggle:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hiệu ứng thanh gạch chân màu xanh (Underline) */
+
+/*End Header Center */
+
+/*Begin Header Right */
+.header-right {
+    display: flex;
+    align-items: center;
+}   
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    width: 55px; /* Trạng thái đóng chỉ hiện icon */
+    overflow: hidden;
+}
+
+.search-container.active {
+    width: 180px; /* Độ rộng khi mở */
+    background: #1f1f1f; /* Màu nền tối như ảnh bạn gửi */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.search-container.active .search-input {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.search-close {
+    color: #737373;
+    cursor: pointer;
+    display: none;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.search-container.active .search-close {
+    display: block;
+}
+
+.search-input {
+    width: 0;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    transition: width 0.4s ease;
+    padding-left: 0;
+}
+
+
+.header-right .search-icon {
+    /* ensure a perfectly round button */
+    display:inline-grid;
+    place-items:center; 
+    height:44px;
+    width: 45px;
+    border-radius: 16px;
+    background:#1f1f1f; 
+    box-sizing:border-box;
+    overflow:hidden;
+    line-height:0; 
+    cursor:pointer;
+}
+
+.header-right .search-icon svg {
+    width:18px;
+    height:18px;
+    fill:#ffffff; /* white magnifier */
+    display:block; /* avoid inline whitespace */
+}
+.header-right .header-lg {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    color: rgb(10, 20, 40);
+    color-scheme: light only;
+    font-family: "FF Mark W05", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    height: 78.4px;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    scroll-margin-top: 80px;
+    tab-size: 4;
+    text-align: left;
+    text-rendering: optimizeSpeed;
+    text-size-adjust: 100%;
+    top: 0px;
+    unicode-bidi: isolate;
+    width: 32px;
+}
+.login-btn {
+    align-items: center;
+    box-sizing: border-box;
+    color: rgb(10, 20, 40);
+    color-scheme: light only;
+    display: flex;
+    font-family: "Neue Frutiger World", Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    height: 78.4px;
+    justify-content: center;
+    line-height: normal;
+    
+    /* Gộp các thuộc tính margin (top, right, bottom, left) đều là 0px */
+    margin: 0px; 
+    
+    /* Gộp các thuộc tính padding (top, right, bottom, left) đều là 0px */
+    padding: 0px; 
+    
+    scroll-margin-top: 80px;
+    tab-size: 4;
+    text-align: left;
+    text-rendering: optimizeSpeed;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    width: 124.463px;
+}
+.login-btn a {
+    /* Background Properties */
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgb(11, 196, 226);
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+
+    /* Border & Box Model */
+    /* Gộp 4 thuộc tính border-radius (đều là 12px) */
+    border-radius: 12px;
+    box-sizing: border-box;
+    height: 32px;
+    width: 112.463px;
+    display: inline-block;
+
+    /* Gộp 4 thuộc tính margin (đều là 0px) */
+    margin: 0px;
+
+    /* Gộp padding: top/bottom = 8px, left/right = 16px */
+    padding: 8px 16px;
+
+    /* Typography (Chữ) */
+    color: rgb(17, 17, 17);
+    font-family: "Neue Frutiger World", Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.04px;
+    line-height: 16px;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+
+    /* Gộp các thuộc tính text-decoration */
+    text-decoration: none;
+
+    /* Transition (Hiệu ứng) */
+    /* Gộp 4 thuộc tính transition */
+    transition: color 1s cubic-bezier(0.06, 0.81, 0, 0.98) 0s;
+    
+    transition-behavior: normal;
+
+    /* Other Properties */
+    color-scheme: light only;
+    cursor: pointer;
+    position: relative;
+    scroll-margin-top: 80px;
+    tab-size: 4;
+    text-rendering: optimizeSpeed;
+    text-size-adjust: 100%;
+    vertical-align: middle;
+    z-index: 0;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.mobile-menu-btn {
+    display: none;
+    cursor: pointer;
+    background: #252525; /* Màu nền xám đậm như hình */
+    padding: 8px;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+/*End Header Right */
+
+
+
+
+
+
+
+
+
+/* Menu In RIOT logo */
+/* --- RIOT MEGA MENU (FIXED STYLE) --- */
+
+/* Overlay bao trùm toàn màn hình (Cố định) */
+.riot-mega-menu-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 2000;
+    display: none;
+}
+
+.riot-mega-menu-overlay.active {
+    display: block;
+}
+
+/* Lớp nền tối phía sau (Backdrop) */
+.riot-menu-backdrop {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.riot-mega-menu-overlay.active .riot-menu-backdrop {
+    opacity: 1;
+}
+
+/* Container Menu Màu Trắng */
+.riot-mega-menu-container {
+    background-color: #fff !important;
+    width: 100% !important;
+    position: relative !important; 
+    padding: 60px 50px !important; /* Tạo khoảng trống phía trên */
+    z-index: 2001;
+}
+
+.riot-mega-menu-overlay.active .riot-mega-menu-container {
+    transform: translateY(0);
+}
+
+/* Header: Logo & Close Button */
+.riot-menu-header {
+    width: 100% !important;
+    position: relative !important;
+    min-height: 50px !important;
+    display: flex !important;
+    overflow: visible !important; /* Quan trọng để nút không bị cắt */
+    padding-bottom: 20px !important;
+}
+
+.riot-menu-logo svg {
+    fill: #000000;
+    height: 30px;
+    width: auto;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+.close-mega-menu {
+    position: absolute;
+    top: 0;
+    right: 100px;
+    background: #f5f5f5;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 28px;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.close-mega-menu:hover {
+    background-color: #e0e0e0 !important;
+}
+
+/* Body: Grid Layout */
+.riot-menu-body {
+    display: flex;
+    padding: 0px 0px;
+    flex-direction: row;
+    flex-basis: 100%;
+    width: 100%;
+    flex: 1;
+    gap: 16px;
+    max-width: 1920px;
+}
+
+/* Left Panel: 3 Cột Link */
+.menu-left-panel {
+    width: 50%;
+    columns: 10em 3;
+    column-gap: 10px;
+
+}
+
+.menu-group { margin-bottom: 30px;
+    break-inside: avoid;  /* ngắt hàng tránh chia nhóm link */
+}
+
+.menu-category-title {
+    background-color: #bababa1a;
+    border-radius: 6.4px;
+    width: 90%;
+    position: static;
+    height: 16px;
+    margin: 0px;
+    padding: 8px 12px 8px 16px;
+    font-size: 13px;
+    text-align: left;
+    font-weight: bold;
+    line-height: 120%;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #0a0a0a;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 8px 0 0 0;
+    margin: 0;
+}
+
+.menu-list li a {
+    color: #4a4a4a;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.2s;
+    display: block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    line-height: 120%;
+}
+
+.menu-list li a:hover {
+    background-color: #ececec; 
+    color: #c8aa6e; 
+}
+
+/* Right Panel: Promo Card */
+.menu-right-panel {
+    display: flex;
+    min-width: 300px;
+    justify-content: flex-end;
+    padding-right: 64px;
+}
+
+.promo-hover {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.2s;
+}
+
+.promo-card {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.promo-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: opacity 0.2s;
+}
+
+.promo-text-wrapper p {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #333;
+}
+
+
+.promo-default-view {
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    transition: all .3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: flex;
+    gap: 16px;
+    margin-right: 32px;
+}
+
+.promo-card-small {
+    flex: 1; /* Chia đều 50-50 */
+    text-decoration: none;
+    color: #111;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.promo-card-small .img-wrapper {
+    width: 100%;
+    height: auto;
+    max-width: 452px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    transition: all .3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: block; 
+}
+
+.promo-card-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Hover vào ảnh nhỏ thì zoom nhẹ */
+.promo-card-small:hover img {
+    transform: scale(1.05);
+}
+
+.promo-card-small p {
+    font-weight: 300;
+    color: #333;
+    text-transform: unset;
+    font-family: unset;
+    font-size: 13px;
+    line-height: 15.6px;
+    text-align: left;
+    color: #0a0a0a;
+    margin: 16px 0 0 0;
+    letter-spacing: .03em;
+    width: 100%;
+    position: static;
+    display: inline-block;
+}
+
+
+
+
+
+/* Modal */
+.play-now-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1002;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.play-now-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.play-now-modal {
+    background-color: #0a1428;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-right: 250px;
+    padding-left:250px;
+    text-align: center;
+    position: relative;
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.play-now-overlay.active .play-now-modal {
+    transform: scale(1);
+}
+
+.close-play-now-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #C8AA6E;
+    border: none;
+    color: #0a1428;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+
+}
+
+.play-now-modal h2 {
+text-wrap: balance;
+word-break: break-word;
+font-style: italic;
+font-weight: 700;
+font-size: 40px;
+line-height: 120px;
+text-transform: uppercase;
+max-width: 784px;
+color: rgb(255, 255, 255);
+}
+
+.play-now-body {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+
+}
+
+.play-now-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.play-now-column p {
+    color: #c4c4c4;
+    font-size: 14px;
+}
+
+.btn-modal {
+    padding: 15px 40px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: filter 0.2s ease;
+}
+
+.btn-modal:hover {
+    filter: brightness(1.1);
+}
+
+.btn-create-account {
+    background-color: #0acbe0;
+    color: #111;
+}
+
+.btn-login {
+    background-color: #C8AA6E;
+    color: #111;
+}
+/* End Modal */
+
+
+/* =========================================
+   MOBILE MENU FULL SCREEN (UPDATED)
+   ========================================= */
+
+/* --- 1. Overlay & Container (Sidebar Mode) --- */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0; left: 0; 
+    width: 100%; height: 100%;
+    z-index: 3000;
+    background-color: rgba(0, 0, 0, 0.6); /* Nền tối mờ */
+    
+    /* QUAN TRỌNG: Flexbox để đẩy menu sang phải */
+    display: flex;
+    justify-content: flex-end; /* Căn phải */
+    align-items: stretch;      /* Kéo dãn chiều cao */
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s;
+}
+
+.mobile-menu-overlay.active {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+/* --- CSS CHO NÚT CHƠI NGAY TRONG MENU MOBILE --- */
+.mobile-cta-wrapper {
+    margin-top: auto; /* Đẩy nút xuống đáy menu */
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.btn-play-mobile-large {
+    display: block;
+    width: 90%;
+    background: linear-gradient(315deg, rgb(11, 196, 226) 0%, rgb(44, 140, 194) 100%);
+    color: #111;
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px 16px;
+    height: 48px;
+    border-radius: 12px;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: background 0.3s ease;
+    line-height: 120%;
+    text-overflow: ellipsis;
+}
+
+.btn-play-mobile-large:hover {
+    background-color: #0bdcd0; /* Sáng hơn khi hover */
+}
+/* Container Menu: Giới hạn chiều rộng để tạo thành thanh Sidebar */
+.mobile-menu-container {
+    background-color: #111;
+    width: 100%;
+    max-width: 400px; /* Tablet/Laptop chỉ rộng 400px */
+    height: 100%;     /* Full chiều cao màn hình */
+    padding: 20px 24px;
+    margin: 0;        /* Xóa margin: 0 auto cũ để không bị căn giữa */
+    display: flex;
+    flex-direction: column; /* Xếp dọc nội dung */
+    overflow-y: auto;       /* Cho phép cuộn nếu menu dài */
+
+    /* Hiệu ứng trượt từ phải sang */
+    transform: translateX(100%); 
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: -5px 0 20px rgba(0,0,0,0.5); /* Bóng đổ ngăn cách với web */
+}
+
+/* Khi active thì trượt vào khớp vị trí (0) */
+.mobile-menu-overlay.active .mobile-menu-container {
+    transform: translateX(0);
+}
+/* 2. Header (Logo & Close) */
+.mobile-menu-container {
+    padding: 20px 32px;
+    padding-right: 64px;
+    max-width: 484px;
+}
+
+.mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.mobile-logo svg {
+    height: 60px;
+    width: auto;
+}
+.close-mobile-menu {
+    background: #292929; /* Nền xám tròn */
+    border: none;
+    width: 40px; height: 40px;
+    border-radius: 50%; /* Hình tròn */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.close-mobile-menu svg {
+    width: 24px; height: 24px;
+}
+
+/* 3. Search Bar (Giống ảnh mẫu) */
+.mobile-search-wrapper {
+    margin-bottom: 30px;
+}
+
+.mobile-search-box {
+    background-color: #292929;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+}
+
+.mobile-search-box .search-icon {
+    width: 20px; height: 20px;
+    margin-right: 10px;
+    stroke: #888;
+}
+
+.mobile-search-box input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.mobile-search-box .clear-search {
+    background: none; border: none;
+    color: #888; font-size: 20px;
+    cursor: pointer;
+}
+
+/* 4. Main Menu List (Typography lớn) */
+.mobile-nav-list {
+    list-style: none;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Khoảng cách giữa các mục */
+}
+
+.nav-item-large, .mobile-submenu li a {
+    display: block;
+    color: #fff;
+    font-size: 18px; /* Chữ to */
+    font-weight: 800; /* In đậm */
+    text-transform: uppercase;
+    padding: 15px 0;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: color 0.2s;
+}
+
+.nav-item-large:hover {
+    color: #C28F2C;
+}
+
+/* External Link Arrow */
+.arrow-diag {
+    font-size: 14px;
+    vertical-align: top;
+    margin-left: 5px;
+    color: #888;
+}
+
+/* 5. Dropdown Animation Logic */
+.mobile-dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+/* Arrow rotation */
+.dropdown-arrow-icon {
+    width: 20px; height: 20px;
+    stroke: #888;
+    transition: transform 0.3s ease;
+}
+
+/* Khi có class 'open' thì xoay mũi tên */
+.mobile-dropdown.open .dropdown-arrow-icon {
+    transform: rotate(180deg);
+}
+
+/* Submenu: Animation chiều cao */
+.mobile-submenu {
+    list-style: none;
+    padding-left: 15px;
+    overflow: hidden;
+    max-height: 0; /* Mặc định ẩn */
+    transition: max-height 0.4s ease-in-out; /* Hiệu ứng trượt */
+}
+
+/* Khi mở thì set chiều cao lớn để hiện nội dung */
+.mobile-dropdown.open .mobile-submenu {
+    max-height: 500px; /* Đủ lớn để chứa hết item con */
+    margin-bottom: 15px;
+}
+
+.mobile-submenu li a:hover {
+    color: #C28F2C;
+}
+
+
+
+
+/* Responsive Header */
+/* Tablet */
+@media (max-width: 1024px) {
+    /* 1. Ẩn toàn bộ thanh menu chữ ở giữa */
+    .header-container {
+        height: 100px !important; /* Tăng từ 80px lên 100px hoặc tùy ý bạn */
+        padding: 0 24px !important;
+    }
+    .logo-riot svg {
+        width: 80px !important; /* Tăng kích thước logo Riot */
+        height: auto;
+    }
+
+    .header-center-ct {
+        display: none !important;
+    }
+
+    .search-container {
+        display: none !important;
+    }
+
+    .logo-league-tablet {
+        display: flex;
+        height: 40px !important; /* Tăng chiều cao vùng chứa logo League */
+       
+    }
+
+    /* 2. Điều chỉnh logo Riot và logo League */
+    .header-left {
+        gap: 10px;
+    }
+    .logo-center-desktop {
+        margin-left: 10px;
+    }
+
+    .logo-center-desktop {
+        display: none !important;
+    }
+
+    /* 3. Ẩn nút "CHƠI NGAY" */
+    .login-btn {
+        display: none !important;
+    }
+
+    /* 4. Hiện nút Hamburger và căn chỉnh lại header-right */
+    .mobile-menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-menu-overlay.active {
+        display: flex !important; /* Đảm bảo overlay hiện ra khi có class active */
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header-right {
+        gap: 5px;
+    }
+
+    /* 5. Giảm kích thước search nếu cần để không bị chật */
+    .search-container {
+        width: 40px;
+    }
+    .header-container { height: 100px !important; padding: 0 25px !important; background: #000; }
+    
+    /* Ẩn các thành phần Desktop */
+    .header-center-ct, .login-btn, .search-container, .logo-center-desktop { display: none !important; }
+
+    /* Logo Riot Trắng & League Vàng */
+    .logo-riot svg { fill: white !important; width: 85px !important; }
+    .logo-league-tablet { display: flex; margin-left: 20px; padding-left: 20px; border-left: 1px solid #333; height: 30px; }
+    
+    /* Cụm Icon phải */
+    .header-status-icon { display: flex; align-items: center; margin-right: 15px; }
+    .header-lg { display: flex; }
+    .tablet-menu-btn { display: flex; background: #222; padding: 10px 12px; border-radius: 8px; margin-left: 15px; cursor: pointer; }
+    
+    .header-right { display: flex; align-items: center; gap: 10px; }
+}

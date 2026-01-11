@@ -371,9 +371,29 @@
         <a href="#">Tùy chọn cookie</a>
     </div>
 
-    <script>
-        // Script nhỏ: Tự động focus vào input đầu tiên
-        document.querySelector('input[type="text"]').focus();
+<script>
+        // 1. Tự động focus vào ô nhập username khi vào trang
+        const usernameInput = document.querySelector('input[type="text"]');
+        if(usernameInput) usernameInput.focus();
+
+        // 2. Xử lý sự kiện đăng nhập
+        const loginForm = document.getElementById('loginForm');
+
+        loginForm.addEventListener('submit', function(event) {
+            // Ngăn chặn hành vi gửi form mặc định (tránh load lại trang hiện tại)
+            event.preventDefault();
+
+            // Lấy giá trị từ ô input (nếu bạn muốn kiểm tra logic sau này)
+            const username = usernameInput.value;
+            const password = document.querySelector('input[type="password"]').value;
+
+            // Kiểm tra cơ bản (HTML đã có thuộc tính required nên trình duyệt sẽ tự chặn nếu để trống)
+            if (username && password) {
+                // --- CHUYỂN HƯỚNG TẠI ĐÂY ---
+                // Giả sử file index.html nằm cùng thư mục với file đăng nhập này
+                window.location.href = './index.html'; 
+            }
+        });
     </script>
 </body>
 </html>
