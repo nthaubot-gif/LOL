@@ -1800,7 +1800,7 @@ color: #0A1428;
 /* Responsive: Khi màn hình nhỏ (điện thoại/tablet dọc) thì chuyển về cột dọc */
 @media (max-width: 1024px) {
 .background-header{
-    top: 78px;
+    top: 20px;
     height: 446px;
     object-fit: cover;
     overflow: hidden;
@@ -1839,7 +1839,7 @@ color: #0A1428;
 .update-header{
     left: 0px;
     width: 390px;
-    padding: 210px 24px;
+    padding: 160px 24px;
     gap: 16px;
 }
 .update-container{

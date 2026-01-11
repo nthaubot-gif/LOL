@@ -1,5 +1,7 @@
 /* Header styles extracted from style.css */
-.header-container {
+
+/* .header-container {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,8 +12,39 @@
     box-sizing: border-box;
     position: static;
     background-color: rgb(0, 0, 0);
+} */
+/* header.css */
+/* Thêm vào cuối file css */
+
+body {
+    /* Bù vào khoảng trống 80px của header để nội dung không bị che */
+    padding-top: 80px; 
 }
 
+/* Vì trong code của bạn, header tăng chiều cao lên 100px ở màn hình Tablet */
+/* @media (max-width: 1024px) {
+    body {
+        padding-top: 100px;
+    }
+} */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 30px;
+    height: 80px;
+    box-sizing: border-box;
+    
+    /* --- PHẦN CHỈNH SỬA --- */
+    position: fixed; /* Đổi từ static thành fixed */
+    top: 0;          /* Dính sát mép trên */
+    left: 0;         /* Dính sát mép trái */
+    width: 100%;     /* Trải rộng hết màn hình */
+    z-index: 1000;   /* Đảm bảo header nổi lên trên các nội dung khác (như video/ảnh) */
+    background-color: rgb(0, 0, 0);
+}
 /*Begin Header Left */
 .header-left {
     display: flex;
